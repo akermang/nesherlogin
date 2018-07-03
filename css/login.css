@@ -637,6 +637,6 @@ a.btn-goback:hover {
 @media(max-width: 425px) {
   .conecting-container {
     padding-top: 30px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 }
