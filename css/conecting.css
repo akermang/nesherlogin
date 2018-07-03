@@ -633,3 +633,10 @@ a.btn-goback:hover {
   fill: #1059FF;
   transform: rotate(180deg);
 }
+
+@media(max-width: 425px) {
+  .conecting-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
