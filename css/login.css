@@ -576,6 +576,8 @@ div.label-wraper {
   border: none;
   border-radius: 20px;
   margin-top: -8px;
+  color: rgba(255,255,255, 1);
+  text-decoration: none;
 }
 
 .btn-animate {
