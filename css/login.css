@@ -117,6 +117,10 @@ body {
   background: #264159;
 }
 
+.conecting-container.order {
+  padding-top: 25px;
+}
+
 .frame {
   height: 575px;
   width: 430px;
@@ -154,12 +158,22 @@ body {
     height: 76px;
 }
 
+.frame.order {
+  width: 900px;
+  height: 680px;
+}
+
 .nav {
   width: 100%;
   height: 100px;
   padding-top: 40px;
   opacity: 1;
   transition: all .5s ease;
+}
+
+.order .nav {
+  padding-top: 0;
+
 }
 
 .nav-up {
@@ -173,6 +187,19 @@ body {
 
 .btn.hidden {
     visibility: hidden;
+}
+
+h3.line-tittle {
+  font-size: 110%;
+  width: 120px;
+  margin-right: 50px;
+  text-align: center;
+  font-weight: 600;
+  padding: 0 10px;
+  text-transform: uppercase;
+  transform: translateY(20px);
+  color: #971a1b;
+  background: #264159;
 }
 
 li {
@@ -226,6 +253,15 @@ li {
   padding-right: 37px;
   padding-top: 55px;
   transition: opacity .5s ease, transform .5s ease;
+}
+
+.order .form-signin {
+  padding-top: 0;
+
+}
+
+.form-signin.product  {
+  width: 100%;
 }
 
 .form-signin-left {
@@ -308,11 +344,17 @@ li {
   width: 100%;
   height: 35px;
   padding-left: 15px;
+  padding-right: 15px;
   border: none;
   border-radius: 20px;
   margin-bottom: 20px;
   background: #fff;
 }
+
+select.form-styling.cotsumer {
+  width: 36.5%;
+}
+
 
 label {
   font-weight: 600;
@@ -324,6 +366,30 @@ label {
   display: block;
 }
 
+.order-details label {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  color: rgba(255,255,255,.7);
+  display: inline;
+}
+
+div.label-wraper {
+  width: 90px;
+  display: inline-block;
+}
+
+.order-details label:not(:first-child) {
+  margin-right: 15px;
+}
+
+.order-details select,
+.order-details input {
+  width: 17%;
+}
+
 :focus {outline: none;
 }
 
@@ -332,6 +398,65 @@ label {
     padding-right: 40px;
     transition: background .5s ease;
  }
+
+ div.line-product,
+ div.line-Shipping-details,
+ div.line-transport-details {
+  border-top: solid 1px rgba(255,255,255,.5);
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+  margin: 12px auto;
+  height: 80px;
+  padding: 20px 15px;
+ }
+
+ 
+ div.line-product {
+   height: 140px;
+ }
+
+ div.line-Shipping-details {
+   height: 160px;
+ }
+
+ .line-product.frame.order.buttons {
+   width: 100%;
+   height: 60px;
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .ap-btn  {
+  padding-top: 0px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  margin-top: -8px;
+  min-width: 100px;
+  background-color: rgb(81, 103, 122);
+  color: rgba(255,255,255, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+}
+
+ .style-line {
+  height: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 24px;
+  margin-top: 30px;
+  border-top: solid 1px rgba(255,255,255,.3);
+  transition: all 0.5s ease;
+ }
+
+ input.in-block-lg {
+  width: 67%;
+}
+
 
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -473,7 +598,7 @@ label {
   background-color: rgba(255,255,255,1);
 }
 
-a.btn-signup:hover, a.btn-signin:hover {
+a.btn-signup:hover, a.btn-signin:hover, button.ap-btn:hover {
     cursor: pointer; 
     background-color: rgb(71, 105, 182);
     transition: background-color .5s; 
@@ -567,6 +692,15 @@ h1 {
   text-align: center;
 }
 
+.order h1 {
+  text-align: right;
+  margin-right: 20px;
+}
+.order .title{
+  border-bottom: 2px solid #1059FF;
+  max-width: 84.5%;
+  margin-right: 28px;
+}
 header .title {
     color: #264159;
     font-size: 35px;
