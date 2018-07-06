@@ -160,7 +160,7 @@ body {
 
 .frame.order {
   width: 900px;
-  height: 780px;
+  height: 745px;
 }
 
 .nav {
@@ -257,6 +257,7 @@ li {
   padding-right: 37px;
   padding-top: 55px;
   transition: opacity .5s ease, transform .5s ease;
+  margin: 0 auto;
 }
 
 .order .form-signin {
@@ -445,13 +446,14 @@ div.label-wraper {
   text-align: center;
 }
 .icon-btn-wraper {
-  width: 70px;
+  width: 60px;
 }
 
 .icon-btn-wraper a img {
   width: 100%;
   border-radius: 50%;
   border: 1px solid rgba(255,255,255, 1);
+  background-color: #fff;
 }
 
  .style-line {
