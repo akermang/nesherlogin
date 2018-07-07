@@ -24,7 +24,7 @@ main {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 18px;
     font: inherit;
     vertical-align: baseline;
   }
@@ -102,6 +102,8 @@ main {
   
   .title{
     overflow: hidden;
+    display: flex;
+    align-items: center;
   }
 
 html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
@@ -197,7 +199,7 @@ body {
 }
 
 h3.line-tittle {
-  font-size: 110%;
+  font-size: 20px;
   max-width: 140px;
   margin-right: 50px;
   text-align: center;
@@ -769,7 +771,7 @@ a.btn-customer:hover,
 
 h1 {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
 }
