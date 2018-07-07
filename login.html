@@ -5,6 +5,8 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Nesher Login</title>
+  <script src="https://cors-anywhere.herokuapp.com/https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/login.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
@@ -18,30 +20,32 @@
           <div class="logo-wraper">
             <img src="assets/nesherLogo.png" alt="">
           </div>
+
           <div class="nav login">
-              <ul class="links">
-                <li class="signin-active">
-                  <a class="btn">התחברות לנשר</a>
-                </li>
-                <!-- <li class="signup-inactive">
-                  <a class="btn hidden">פרטי לקוח </a>
-                </li> -->
-                <li class="signup-inactive">
-                  <a class="btn">
-                    <img src="assets/icons/Icons app/arabic.png" alt=""> </a>
-                </li>
-                <li class="signup-inactive">
-                  <a class="btn">
-                    <img src="assets/icons/Icons app/english.png" alt=""> </a>
-                </li>
-                <li class="signup-inactive">
-                  <a class="btn">
-                    <img src="assets/icons/Icons app/hebrew.png" alt=""> </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="links">
+              <li class="customer-inactive">
+                <a class="btn hidden">פרטי לקוח </a>
+              </li>
+              <li class="signin-active">
+                <a class="btn active">התחברות לנשר</a>
+              </li>
+
+              <li class="signin-active">
+                <a class="btn">
+                  <img src="assets/icons/Icons app/arabic.png" alt=""> </a>
+              </li>
+              <li class="signin-active">
+                <a class="btn">
+                  <img src="assets/icons/Icons app/english.png" alt=""> </a>
+              </li>
+              <li class="signin-active">
+                <a class="btn">
+                  <img src="assets/icons/Icons app/hebrew.png" alt=""> </a>
+              </li>
+            </ul>
+          </div>
         </div>
-       
+
         <div ng-app ng-init="checked = false">
           <form class="form-signin" action="" method="post" name="form">
             <label for="username">שם משתמש</label>
@@ -49,20 +53,18 @@
             <label for="password">סיסמה</label>
             <input class="form-styling" type="text" name="password" placeholder="" />
             <div class="btn-animate">
-              <a href="orderDetails.html" class="btn-signin">כניסה</a>
+              <a class="btn">כניסה</a>
             </div>
           </form>
 
-          <form class="form-signup" action="" method="post" name="form">
-            <label for="fullname">Full name</label>
+          <form class="form-customer" action="" method="post" name="form">
+            <label for="fullname">לקוח</label>
             <input class="form-styling" type="text" name="fullname" placeholder="" />
-            <label for="email">Email</label>
-            <input class="form-styling" type="text" name="email" placeholder="" />
-            <label for="password">Password</label>
+            <label for="customerNomber">מספר לקוח</label>
+            <input class="form-styling" type="number" name="customerNomber" placeholder="" />
+            <label for="billingSite">אתר לחיוב</label>
             <input class="form-styling" type="text" name="password" placeholder="" />
-            <label for="confirmpassword">Confirm password</label>
-            <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
-            <a ng-click="checked = !checked" class="btn-signup">Sign Up</a>
+            <a href="orderDetails.html" ng-click="checked = !checked" class="btn-customer">הבא</a>
           </form>
 
           <div class="success">

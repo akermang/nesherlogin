@@ -189,6 +189,10 @@ body {
     visibility: hidden;
 }
 
+.btn.active {
+  visibility: visible;
+}
+
 h3.line-tittle {
   font-size: 110%;
   width: 120px;
@@ -226,6 +230,7 @@ li {
 }
 
 .signin-inactive a {
+  display: none;
   padding-bottom: 0;
   color: rgba(255,255,255,.3);
   text-decoration: none;
@@ -233,20 +238,27 @@ li {
   cursor: pointer;
 }
 
-.signup-active a {
-  cursor: pointer;
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: solid 2px #1059FF;
-  padding-bottom: 10px;
+.signin-inactive a img {
+  display: none;
 }
 
-.signup-inactive a {
+.customer-inactive a {
+  display: none;
   cursor: pointer;
   color: rgba(255,255,255,.3);
   text-decoration: none;
   transition: all .25s ease;
 }
+
+.customer-active a {
+  display: inline;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+
 
 .form-signin {
   width: 430px;
@@ -274,7 +286,7 @@ li {
   opacity: .0;
 }
 
-.form-signup {
+.form-customer {
   width: 430px;
   height: 375px;
 	font-size: 16px;
@@ -289,12 +301,12 @@ li {
   transition: all .5s ease;
 }
 
-.form-signup-left {
+.form-customer-left {
   transform: translateX(-399px);
   opacity: 1;
 }
 
-.form-signup-down {
+.form-customer-down {
   top: 0px;
   opacity: 0;
 }
@@ -305,7 +317,7 @@ li {
   text-align: center;
   position: relative;
   top: -890px;
-  left: 450px;
+  left: 365px;
   opacity: .0;
   transition: all .8s .4s ease;
 }
@@ -340,7 +352,7 @@ li {
     fill: rgba(255,255,255,.03);
 }
 
-.form-signin input, .form-signup input {
+.form-signin input, .form-customer input {
   color: #264159;
   font-size: 13px;
 }
@@ -398,7 +410,7 @@ div.label-wraper {
 :focus {outline: none;
 }
 
-.form-signin input:focus, textarea:focus, .form-signup input:focus, textarea:focus {
+.form-signin input:focus, textarea:focus, .form-customer input:focus, textarea:focus {
     border: none; 
     padding-right: 40px;
     transition: background .5s ease;
@@ -558,7 +570,7 @@ div.label-wraper {
   margin-top: -1px;
 }
 
-.btn-signup {
+.btn-customer {
   float: left;
   font-weight: 700;
   text-transform: uppercase;
@@ -571,7 +583,7 @@ div.label-wraper {
 	border: none;
 	border-radius: 20px;
   margin-top: 23px;
-  background-color: #264159;
+  background-color: rgb(81, 103, 122);
 }
 
 .btn-signin {
@@ -615,7 +627,7 @@ div.label-wraper {
   background-color: rgba(255,255,255,1);
 }
 
-a.btn-signup:hover, a.btn-signin:hover, button.ap-btn:hover {
+a.btn-customer:hover, a.btn-signin:hover, button.ap-btn:hover {
     cursor: pointer; 
     background-color: rgb(71, 105, 182);
     transition: background-color .5s; 
