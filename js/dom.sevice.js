@@ -1,4 +1,3 @@
-console.log('hello')
 $(function () {
     $(".btn").click(function () {
         $(".form-signin").toggleClass("form-signin-left");
@@ -41,4 +40,10 @@ function clearFields() {
     $("select").each(function(){
         $(this).val("")
     })
+}
+
+function sendOrder() {
+   
+    let html = "<div class='confirm'><a href='login.html'><label>הזמנה התקבלה בהצלחה</label></a></div>"
+    $("#sendOrder-container").html(html);
 }

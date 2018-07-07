@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <main>
         <div class="conecting-container order">
             <div class="frame order">
@@ -28,9 +27,9 @@
                         <h1>סיכום הזמנה</h1>
                     </div>
                 </div>
-
                 <div class="form-container order-details">
                     <form class="product" action="" method="post" name="form">
+                        
                         <h3 class="line-tittle">מוצר</h3>
                         <div class="line-product product">
                             <label for="sku">מק"ט</label>
@@ -71,9 +70,7 @@
                             <input class="form-styling" type="number" name="total" placeholder="" readonly/>
                         </div>
 
-
-
-                        <div class="line-product frame order buttons">
+                        <div id="sendOrder-container" class="line-product frame order buttons">
                             <div class="icon-btn-wraper summary">
                                 <a href="orderDetails.html" class="btn btn-customer">
                                     <!-- <img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt=""> -->
@@ -81,23 +78,16 @@
                                 </a>
                             </div>
                             <div class="icon-btn-wraper summary">
-                                <a href="login.html" class="btn btn-customer">
+                                <a onclick="sendOrder()" class="btn btn-customer">
                                     <!-- <img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt=""> -->
                                     הזמן
                                 </a>
                             </div>
-
                         </div>
                     </form>
-
-
-
                 </div>
-
             </div>
-
         </div>
-
     </main>
 
     <script src="js/dom.sevice.js"></script>
