@@ -433,7 +433,11 @@ div.label-wraper {
 
  
  div.line-product {
-   height: initial;
+   height: 125px;
+ }
+
+ div.line-product.summary {
+   height: 80px;
  }
 
  div.line-Shipping-details {
