@@ -33,3 +33,12 @@ $(function () {
         // $(".forgot").toggleClass("forgot-fade");
     });
 });
+
+function clearFields() {
+    $("input").each(function(){
+        $(this).val("")
+    });
+    $("select").each(function(){
+        $(this).val("")
+    })
+}

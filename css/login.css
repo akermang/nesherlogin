@@ -368,7 +368,7 @@ li {
   background: #fff;
 }
 
-select.form-styling.cotsumer {
+select.form-styling.customer {
   width: 36.5%;
 }
 
@@ -429,7 +429,7 @@ div.label-wraper {
 
  
  div.line-product {
-   height: 140px;
+   height: initial;
  }
 
  div.line-Shipping-details {
@@ -456,7 +456,15 @@ div.label-wraper {
   text-transform: uppercase;
   font-size: 13px;
   text-align: center;
+  text-decoration: none;
 }
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .icon-btn-wraper {
   width: 60px;
 }
@@ -466,6 +474,14 @@ div.label-wraper {
   border-radius: 50%;
   border: 1px solid rgba(255,255,255, 1);
   background-color: #fff;
+}
+
+.icon-label {
+  text-align: center;
+}
+
+.icon-btn-wraper.summary {
+  width:30%;
 }
 
  .style-line {

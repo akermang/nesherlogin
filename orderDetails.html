@@ -58,9 +58,9 @@
                         <h3 class="line-tittle">פרטי אספקה</h3>
                         <div class="line-Shipping-details">
                             <div class="label-wraper">
-                                <label for="sku">לקוח למשלוח</label>
+                                <label for="shipToCustomer">לקוח למשלוח</label>
                             </div>
-                            <select class="form-styling cotsumer">
+                            <select class="form-styling customer">
                                 <option>first option</option>
                                 <option>second option</option>
                                 <option>third option</option>
@@ -100,10 +100,47 @@
                         </div>
 
                         <div class="line-product frame order buttons">
-                            <div class="icon-btn-wraper"><a href="https://www.nesher.co.il/"><img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt=""></a></div>
-                            <div class="icon-btn-wraper"><a href="https://www.nesher.co.il/"><img src="assets/orderDetailsIcons/duplicate.png" alt=""></a></div>
-                            <div class="icon-btn-wraper"><a href="https://www.nesher.co.il/"><img src="assets/orderDetailsIcons/addneww.png" alt=""></a></div>
-                            <div class="icon-btn-wraper"><a href="https://www.nesher.co.il/"><img src="assets/orderDetailsIcons/Delete.png" alt=""></a></div>
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a href="orderSummary.html">
+                                        <img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>שמור ועבור לעגלה</label>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a href="https://www.nesher.co.il/">
+                                        <img src="assets/orderDetailsIcons/duplicate.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>שמור ושכפל</label>
+                                </div>
+                            </div>
+                           <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a href="https://www.nesher.co.il/">
+                                        <img src="assets/orderDetailsIcons/addneww.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>שמור והוסף</label>
+                                </div>
+                           </div>
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a onclick="clearFields()">
+                                        <img src="assets/orderDetailsIcons/Delete.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>נקה</label>
+                                </div>
+                            </div>
+                           
                         </div>
                     </form>
 
@@ -117,7 +154,7 @@
 
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/dom.sevice.js"></script>
 
 </body>
 
