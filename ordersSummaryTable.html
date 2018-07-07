@@ -26,47 +26,57 @@
                     <div class="title">
                         <h1>סיכום הזמנה</h1>
                     </div>
-                    <div class="btn-table"><a class="btn btn-summary" href="ordersSummaryTable.html">הצג טבלה</a></div>
                 </div>
                 <div class="form-container order-details">
                     <form class="product" action="" method="post" name="form">
-                        
-                        <h3 class="line-tittle">מוצר</h3>
-                        <div class="line-product product">
-                            <div class="label-wraper">
-                                <label for="sku">מק"ט</label>
-                            </div>
-                            <input class="form-styling" type="text" name="sku" placeholder="" readonly />
-                            <label for="price">מחיר</label>
-                            <input class="form-styling" type="text" name="price" placeholder="" readonly />
-                            <label for="order-qt">כמות</label>
-                            <input class="form-styling" type="number" name="order-qt" placeholder="" readonly/>
-                            <div>
-                                <div class="label-wraper">
-                                    <label for="description">תאור</label>
-                                </div>
-                                <input class="form-styling in-block-lg" type="text" name="description" placeholder="" readonly/>
-                            </div>
-                        </div>
 
-                        <h3 class="line-tittle">פרטי אספקה</h3>
-                        <div class="line-Shipping-details">
-                            <div class="label-wraper">
-                                <label for="shipToCustomer">לקוח למשלוח</label>
-                            </div>
-                            <input class="form-styling customer" type="text" name="shipToCustomer" placeholder="" readonly />
-                            <label for="deliveryDate"> תאריך אספקה</label>
-                            <input class="form-styling" type="text" name="deliveryDate" placeholder="" readonly />
-                            <div>
-                                <div class="label-wraper">
-                                    <label for="shippingAddress">כתובת למשלוח </label>
-                                </div>
-                                <input class="form-styling in-block-lg" type="text" name="shippingAddress" placeholder="" />
-                            </div>
+                        <div>
+                            <table id="tableOutput" class="responseTable table table-bordered table-hover table-striped table-responsive">
+                                <thead id="tableOutputHead">
+                                    <tr>
+                                        <th name="Seq">מק"ט</th>
+                                        <th name="description">תאור</th>
+                                        <th name="price">מחיר</th>
+                                        <th name="order-qt">כמות</th>
+                                        <th name="shipToCustomer">לקוח למשלוח</th>
+                                        <th name="shippingAddress">כתובת</th>
+                                        <th name="deliveryDate">תאריך אספקה</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableOutputBody">
+                                    <tr>
+                                        <td name="Seq">מק"ט</td>
+                                        <td name="description">תאור</td>
+                                        <td name="price">מחיר</td>
+                                        <td name="order-qt">כמות</td>
+                                        <td name="shipToCustomer">לקוח למשלוח</td>
+                                        <td name="shippingAddress">כתובת</td>
+                                        <td name="deliveryDate">תאריך אספקה</td> 
+                                    </tr>
+                                    <tr>
+                                        <td name="Seq">מק"ט</td>
+                                        <td name="description">תאור</td>
+                                        <td name="price">מחיר</td>
+                                        <td name="order-qt">כמות</td>
+                                        <td name="shipToCustomer">לקוח למשלוח</td>
+                                        <td name="shippingAddress">כתובת</td>
+                                        <td name="deliveryDate">תאריך אספקה</td> 
+                                    </tr>
+
+                                    <tr>
+                                        <td name="Seq">מק"ט</td>
+                                        <td name="description">תאור</td>
+                                        <td name="price">מחיר</td>
+                                        <td name="order-qt">כמות</td>
+                                        <td name="shipToCustomer">לקוח למשלוח</td>
+                                        <td name="shippingAddress">כתובת</td>
+                                        <td name="deliveryDate">תאריך אספקה</td> 
+                                    </tr>                                </tbody>
+                            </table>
                         </div>
 
                         <!-- <h3 class="line-tittle">סיכום</h3> -->
-                        <div class="line-product summary">
+                        <div class="line-product summary space-around">
                             <div class="label-wraper">
                                 <label for="sum">סה"כ</label>
                             </div>

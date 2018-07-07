@@ -440,6 +440,11 @@ div.label-wraper {
    height: 80px;
  }
 
+ div.line-product.summary.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
  div.line-Shipping-details {
    height: 160px;
  }
@@ -473,6 +478,14 @@ div.label-wraper {
   font-size: 13px;
   text-align: center;
   text-decoration: none;
+}
+
+div.btn-table {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  margin-left: 126px;
+  border-bottom: 2px solid #1059ff;
 }
 
 .icon-container {
@@ -871,6 +884,92 @@ a.btn-goback:hover {
   cursor: pointer;
   fill: #1059FF;
   transform: rotate(180deg);
+}
+
+/* table */
+table#tableOutput {
+  max-width: fit-content;
+  margin: 20px auto;
+}
+
+
+.table-responsive {
+  display: block;
+}
+
+.responseTable {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.responseTable tr {
+  border: 1px solid #264159;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #1d338c14;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #1d338c31;
+}
+
+.responseTable th {
+  display: none;
+  border-top: 1px solid #fff;
+  background-color: #264159;
+  color: #bec6ce;
+  padding: 0.5em;
+}
+
+.responseTable th:first-child {
+  text-align: center;
+}
+
+.responseTable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+
+.responseTable td {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #264159;
+}
+
+.responseTable th,
+.responseTable td {
+  text-align: right;
+  margin: 0.5em 1em;
+  display: table-cell;
+  padding: 1em;
+}
+
+@media (max-width: 952px) {
+  .table-responsive {
+    border: 1px solid #1d338c;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .responseTable th {
+    padding: 0.6em;
+  }
+
+}
+
+@media (max-width: 560px) {
+  .responseTable {
+    border: 1px solid #1d338c;
+  }
+  .responseTable th,
+  .responseTable td {
+    display: table-cell;
+    padding: 1em;
+  }
 }
 
 @media(max-width: 425px) {
