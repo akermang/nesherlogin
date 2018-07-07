@@ -584,6 +584,7 @@ div.label-wraper {
 	border-radius: 20px;
   margin-top: 23px;
   background-color: rgb(81, 103, 122);
+  text-decoration: none;
 }
 
 .btn-signin {
@@ -627,7 +628,10 @@ div.label-wraper {
   background-color: rgba(255,255,255,1);
 }
 
-a.btn-customer:hover, a.btn-signin:hover, button.ap-btn:hover {
+a.btn-customer:hover,
+ a.btn-signin:hover,
+  button.ap-btn:hover,
+  a.btn-animate:hover {
     cursor: pointer; 
     background-color: rgb(71, 105, 182);
     transition: background-color .5s; 
