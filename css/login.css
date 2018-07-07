@@ -438,7 +438,7 @@ div.label-wraper {
 
  .line-product.frame.order.buttons {
    width: 100%;
-   height:  110px;
+   min-height:  110px;
    display: flex;
    justify-content: space-evenly;
  }
