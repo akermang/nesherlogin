@@ -402,6 +402,12 @@ div.label-wraper {
   display: inline-block;
 }
 
+div.label-wraper.small {
+  display: inline-flex;
+  max-width: 55px;
+  justify-content: flex-end;
+}
+
 .order-details label:not(:first-child) {
   margin-right: 15px;
 }
