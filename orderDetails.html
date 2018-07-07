@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <script src="https://cors-anywhere.herokuapp.com/https://code.jquery.com/jquery-3.2.1.min.js"
-     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+    <script src="https://cors-anywhere.herokuapp.com/https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
@@ -30,29 +30,28 @@
                 </div>
 
                 <div class="form-container order-details">
-                    <form class="form-signin product" action="" method="post" name="form">
+                    <form class="product" action="" method="post" name="form">
                         <h3 class="line-tittle">מוצר</h3>
                         <div class="line-product product">
                             <label for="sku">מק"ט</label>
-                            <select class="form-styling">
+                            <select name="sku" class="form-styling">
                                 <option>first option</option>
                                 <option>second option</option>
                                 <option>third option</option>
                             </select>
 
                             <label for="price">מחיר</label>
-                            <input class="form-styling" type="text" name="password" placeholder="" />
+                            <input class="form-styling" type="text" name="price" placeholder="" />
                             <label for="order-qt">כמות</label>
-                            <select class="form-styling">
+                            <select name="order-qt" class="form-styling">
                                 <option>first option</option>
                                 <option>option</option>
                                 <option>option</option>
                             </select>
                             <div>
                                 <label for="description">תאור</label>
-                                <input class="form-styling in-block-lg" type="text" name="username" placeholder="" />
+                                <input class="form-styling in-block-lg" type="text" name="description" placeholder="" />
                             </div>
-
                         </div>
 
                         <h3 class="line-tittle">פרטי אספקה</h3>
@@ -60,38 +59,38 @@
                             <div class="label-wraper">
                                 <label for="shipToCustomer">לקוח למשלוח</label>
                             </div>
-                            <select class="form-styling customer">
+                            <select name="shipToCustomer" class="form-styling customer">
                                 <option>first option</option>
                                 <option>second option</option>
                                 <option>third option</option>
                             </select>
-                           
+
                             <label for="deliveryDate"> תאריך אספקה</label>
-                            <select class="form-styling">
+                            <select name="deliveryDate" class="form-styling">
                                 <option>first option</option>
                                 <option>option</option>
                                 <option>option</option>
                             </select>
                             <div>
                                 <div class="label-wraper">
-                                    <label for="sku">כתובת למשלוח </label>
+                                    <label for="shippingAddress">כתובת למשלוח </label>
                                 </div>
-                                <input class="form-styling in-block-lg" type="text" name="username" placeholder="" />
+                                <input class="form-styling in-block-lg" type="text" name="shippingAddress" placeholder="" />
                             </div>
                         </div>
 
                         <h3 class="line-tittle">פרטי הובלה</h3>
                         <div class="line-transport-details">
                             <label for="comments">הערות</label>
-                            <input class="form-styling" type="text" name="username" placeholder="" />
+                            <input class="form-styling" type="text" name="comments" placeholder="" />
                             <label for="TermsOfTransportation">תנאי הובלה</label>
-                            <select class="form-styling">
+                            <select name="TermsOfTransportation" class="form-styling">
                                 <option>first option</option>
                                 <option>second option</option>
                                 <option>third option</option>
                             </select>
                             <label for="transporter">חברת הובלה</label>
-                            <select class="form-styling">
+                            <select name="transporter" class="form-styling">
                                 <option>first option</option>
                                 <option>option</option>
                                 <option>option</option>
@@ -120,7 +119,7 @@
                                     <label>שמור ושכפל</label>
                                 </div>
                             </div>
-                           <div class="icon-container">
+                            <div class="icon-container">
                                 <div class="icon-btn-wraper">
                                     <a href="https://www.nesher.co.il/">
                                         <img src="assets/orderDetailsIcons/addneww.png" alt="">
@@ -129,7 +128,7 @@
                                 <div class="icon-label">
                                     <label>שמור והוסף</label>
                                 </div>
-                           </div>
+                            </div>
                             <div class="icon-container">
                                 <div class="icon-btn-wraper">
                                     <a onclick="clearFields()">
@@ -140,7 +139,7 @@
                                     <label>נקה</label>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </form>
 
