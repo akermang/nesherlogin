@@ -167,6 +167,10 @@ body {
   height: 630px;
 }
 
+.frame.order.summary.table1-page {
+  height: 679px;
+}
+
 .nav {
   height: 100px;
   padding-top: 40px;
@@ -402,12 +406,24 @@ div.label-wraper {
   display: inline-block;
 }
 
+div.label-wraper.w-s-60 {
+  width: 60px;
+}
+
+label.w-s-60 {
+  width: 60px;
+}
+
 .order-details label:not(:first-child) {
   margin-right: 15px;
 }
 
 .order-details select,
 .order-details input {
+  width: 17%;
+}
+
+.order-details.long input {
   width: 17%;
 }
 
@@ -443,6 +459,14 @@ div.label-wraper {
  div.line-product.summary.space-around {
   display: flex;
   justify-content: space-around;
+}
+
+div.line-product.summary.column {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-right: 112px;
+
 }
 
  div.line-Shipping-details {
