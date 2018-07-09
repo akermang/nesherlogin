@@ -421,6 +421,7 @@ label.w-s-60 {
 .order-details select,
 .order-details input {
   width: 17%;
+  outline: 0;
 }
 
 .order-details.long input {
