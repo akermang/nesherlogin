@@ -459,6 +459,11 @@ li {
   background: #fff;
 }
 
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 20px!important;
+}
+
 select.form-styling.customer {
   width: 36.5%;
 }
